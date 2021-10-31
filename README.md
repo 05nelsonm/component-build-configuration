@@ -47,13 +47,18 @@ object AppModule {
             variant = BuildConfig.BUILD_TYPE // overloaded to be either "debug" or "release" depending on `isDebug`
         )
     
+    @Provides
+    fun provideMyMultiPlatformClass(
+        buildConfiguration: BuildConfiguration
+    ): MyMultiPlatformClass =
+        MyMultiPlatformClass(buildConfiguration)
 }
 
-// module :core
-class MyClass @Inject constructor(private val config: BuildConfiguration) {
+// module :core (kotlin multiplatform project where class is in commonMain)
+class MyMultiPlatformClass(private val config: BuildConfiguration) {
     
     fun doSomethingWithString(string: String): String {
-        if (config.debug) {
+        if (config.isDebug) {
             // do this
         } else {
             // do that
