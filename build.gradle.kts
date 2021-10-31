@@ -33,8 +33,8 @@ plugins {
 
 kmpPublish {
     setupRootProject(
-        versionName = "1",
-        versionCode = 1,
+        versionName = "2-SNAPSHOT",
+        versionCode = 2,
         pomInceptionYear = 2021,
     )
 }
