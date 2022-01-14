@@ -24,6 +24,11 @@ dependencies {
 }
 ```
 
+### Kotlin Version Compatibility
+| build-configuration |     kotlin     |
+| :-----------------: | :------------: |
+|          1          |     1.5.31     |
+
 ### Usage (Android example using Hilt dependency injection)
 
 ```kotlin
@@ -43,7 +48,6 @@ object AppModule {
             versionName = BuildConfig.VERSION_NAME,
             versionCode = BuildConfig.VERSION_CODE,
             isDebug = BuildConfig.DEBUG,
-            platform = BuildConfiguration.Platform.Android(),
             variant = BuildConfig.BUILD_TYPE // overloaded to be either "debug" or "release" depending on `isDebug`
         )
     
@@ -62,17 +66,6 @@ class MyMultiPlatformClass(private val config: BuildConfiguration) {
             // do this
         } else {
             // do that
-        }
-    }
-    
-    fun doSomethingBasedOnPlatform(string: String) {
-        when (config.platform) {
-            is Platform.Android -> { /* do something */ }
-            is Platform.Jvm -> { /* do something */ }
-            is Platform.Js -> { /* do something */ }
-            is Platform.Darwin -> { /* do something */ }
-            is Platform.Linux -> { /* do something */ }
-            is Platform.Mingw -> { /* do something */ }
         }
     }
 }
