@@ -12,7 +12,7 @@ frameworks can be found [HERE](https://kotlin-components.matthewnelson.io)
 // build.gradle.kts
 
 dependencies {
-    implementation("io.matthewnelson.kotlin-components:build-configuration:1")
+    implementation("io.matthewnelson.kotlin-components:build-configuration:2.0.0")
 }
 ```
 
@@ -20,14 +20,18 @@ dependencies {
 // build.gradle
 
 dependencies {
-    implementation "io.matthewnelson.kotlin-components:build-configuration:1"
+    implementation "io.matthewnelson.kotlin-components:build-configuration:2.0.0"
 }
 ```
 
 ### Kotlin Version Compatibility
+
+**Note:** as of `2.0.0`, the experimental memory model for KotlinNative is enabled.
+
 | build-configuration |     kotlin     |
 | :-----------------: | :------------: |
 |          1          |     1.5.31     |
+|        2.0.0        |     1.6.10     |
 
 ### Usage (Android example using Hilt dependency injection)
 
