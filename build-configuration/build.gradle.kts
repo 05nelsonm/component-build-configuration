@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  **/
-import io.matthewnelson.kotlin.components.dependencies.versions
 import io.matthewnelson.kotlin.components.kmp.KmpTarget
 import org.jetbrains.kotlin.gradle.plugin.KotlinJsCompilerType
 
@@ -25,7 +24,7 @@ plugins {
 kmpConfiguration {
     setupMultiplatform(
         setOf(
-            KmpTarget.Jvm.Jvm(kotlinJvmTarget = JavaVersion.VERSION_1_8),
+            KmpTarget.Jvm.Jvm(kotlinJvmTarget = JavaVersion.VERSION_11),
 
             KmpTarget.NonJvm.JS(
                 compilerType = KotlinJsCompilerType.BOTH,
