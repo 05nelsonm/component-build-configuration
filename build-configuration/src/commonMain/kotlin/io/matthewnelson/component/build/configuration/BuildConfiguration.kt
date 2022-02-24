@@ -30,7 +30,8 @@ data class BuildConfiguration @JvmOverloads constructor(
     val versionName: String,
     val versionCode: Int,
     val isDebug: Boolean,
-    val variant: String = if (isDebug) "debug" else "release"
+    val variant: String = if (isDebug) "debug" else "release",
+    val flavor: String = "",
 ) {
 
     init {
