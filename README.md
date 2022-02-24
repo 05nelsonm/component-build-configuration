@@ -25,7 +25,7 @@ frameworks can be found [HERE](https://kotlin-components.matthewnelson.io)
 // build.gradle.kts
 
 dependencies {
-    implementation("io.matthewnelson.kotlin-components:build-configuration:2.0.0")
+    implementation("io.matthewnelson.kotlin-components:build-configuration:3.0.0")
 }
 ```
 
@@ -33,7 +33,7 @@ dependencies {
 // build.gradle
 
 dependencies {
-    implementation "io.matthewnelson.kotlin-components:build-configuration:2.0.0"
+    implementation "io.matthewnelson.kotlin-components:build-configuration:3.0.0"
 }
 ```
 
@@ -45,6 +45,7 @@ dependencies {
 | :-----------------: | :------------: |
 |          1          |     1.5.31     |
 |        2.0.0        |     1.6.10     |
+|        3.0.0        |     1.6.10     |
 
 ### Usage (Android example using Hilt dependency injection)
 
@@ -65,7 +66,8 @@ object AppModule {
             versionName = BuildConfig.VERSION_NAME,
             versionCode = BuildConfig.VERSION_CODE,
             isDebug = BuildConfig.DEBUG,
-            variant = BuildConfig.BUILD_TYPE // overloaded to be either "debug" or "release" depending on `isDebug`
+            variant = BuildConfig.BUILD_TYPE, // overloaded to be either "debug" or "release" depending on `isDebug`,
+            flavor = BuildConfig.FLAVOR,
         )
     
     @Provides
