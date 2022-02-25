@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Version 3.0.0 (2022-02-24)
+ - Bumps dependencies
+ - Adds `flavor` argument
+
 ## Version 2.0.0 (2022-01-14)
  - Removes the `Platform` class and associated argument
  - Bumps dependencies
