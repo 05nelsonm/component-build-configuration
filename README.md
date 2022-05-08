@@ -1,5 +1,5 @@
 # component-build-configuration
-[![Kotlin](https://img.shields.io/badge/kotlin-1.6.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.6.21-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)  
 
 ![android](https://camo.githubusercontent.com/b1d9ad56ab51c4ad1417e9a5ad2a8fe63bcc4755e584ec7defef83755c23f923/687474703a2f2f696d672e736869656c64732e696f2f62616467652f706c6174666f726d2d616e64726f69642d3645444238442e7376673f7374796c653d666c6174)
@@ -23,17 +23,15 @@ frameworks can be found [HERE](https://kotlin-components.matthewnelson.io)
 ### Get Started
 ```kotlin
 // build.gradle.kts
-
 dependencies {
-    implementation("io.matthewnelson.kotlin-components:build-configuration:3.0.0")
+    implementation("io.matthewnelson.kotlin-components:build-configuration:3.0.1")
 }
 ```
 
 ```groovy
 // build.gradle
-
 dependencies {
-    implementation "io.matthewnelson.kotlin-components:build-configuration:3.0.0"
+    implementation "io.matthewnelson.kotlin-components:build-configuration:3.0.1"
 }
 ```
 
@@ -46,6 +44,7 @@ dependencies {
 |          1          |     1.5.31     |
 |        2.0.0        |     1.6.10     |
 |        3.0.0        |     1.6.10     |
+|        3.0.1        |     1.6.21     |
 
 ### Usage (Android example using Hilt dependency injection)
 
@@ -66,7 +65,7 @@ object AppModule {
             versionName = BuildConfig.VERSION_NAME,
             versionCode = BuildConfig.VERSION_CODE,
             isDebug = BuildConfig.DEBUG,
-            variant = BuildConfig.BUILD_TYPE, // overloaded to be either "debug" or "release" depending on `isDebug`,
+            variant = BuildConfig.BUILD_TYPE,
             flavor = BuildConfig.FLAVOR,
         )
     

@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## Version 3.0.1 (2022-05-08)
+ - Bumps Kotlin `1.6.10` -> `1.6.21`
+
 ## Version 3.0.0 (2022-02-24)
  - Bumps dependencies
  - Adds `flavor` argument
