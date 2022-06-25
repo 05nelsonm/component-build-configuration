@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Version 3.0.2 (2022-06-24)
+ - Re-enable compiler flag `enableCompatibilityMetadataVariant=true` to support
+   non-hierarchical projects. (sorry...)
+
 ## Version 3.0.2 (2022-05-14)
  - Updates Kotlin-Components
      - Support new targets:
