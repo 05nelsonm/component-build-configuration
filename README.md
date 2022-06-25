@@ -25,14 +25,14 @@ frameworks can be found [HERE](https://kotlin-components.matthewnelson.io)
 ```kotlin
 // build.gradle.kts
 dependencies {
-    implementation("io.matthewnelson.kotlin-components:build-configuration:3.0.2")
+    implementation("io.matthewnelson.kotlin-components:build-configuration:3.0.3")
 }
 ```
 
 ```groovy
 // build.gradle
 dependencies {
-    implementation "io.matthewnelson.kotlin-components:build-configuration:3.0.2"
+    implementation "io.matthewnelson.kotlin-components:build-configuration:3.0.3"
 }
 ```
 
@@ -42,11 +42,12 @@ dependencies {
 
 | build-configuration |     kotlin     |
 | :-----------------: | :------------: |
-|          1          |     1.5.31     |
-|        2.0.0        |     1.6.10     |
-|        3.0.0        |     1.6.10     |
-|        3.0.1        |     1.6.21     |
+|        3.0.3        |     1.6.21     |
 |        3.0.2        |     1.6.21     |
+|        3.0.1        |     1.6.21     |
+|        3.0.0        |     1.6.10     |
+|        2.0.0        |     1.6.10     |
+|          1          |     1.5.31     |
 
 ### Usage (Android example using Hilt dependency injection)
 
