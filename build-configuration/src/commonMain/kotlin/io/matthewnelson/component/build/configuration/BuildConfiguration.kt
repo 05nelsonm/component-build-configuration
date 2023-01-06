@@ -43,8 +43,8 @@ class BuildConfiguration {
         variant: String,
         flavor: String,
     ) {
-        check(applicationId.isNotEmpty()) { "applicationId cannot be empty" }
-        check(versionName.isNotEmpty()) { "versionName cannot be empty" }
+        check(applicationId.isNotBlank()) { "applicationId cannot be blank" }
+        check(versionName.isNotBlank()) { "versionName cannot be blank" }
         check(versionCode > 0) { "versionCode must be greater than 0" }
 
         this.applicationId = applicationId
