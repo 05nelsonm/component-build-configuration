@@ -1,8 +1,14 @@
 public final class io/matthewnelson/component/build/configuration/BuildConfiguration {
+	public final field applicationId Ljava/lang/String;
+	public final field flavor Ljava/lang/String;
+	public final field isDebug Z
+	public final field variant Ljava/lang/String;
+	public final field versionCode I
+	public final field versionName Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Z)V
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;IZ)V
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;IZLjava/lang/String;)V
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;IZLjava/lang/String;Ljava/lang/String;)V
-	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;IZLjava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()I
