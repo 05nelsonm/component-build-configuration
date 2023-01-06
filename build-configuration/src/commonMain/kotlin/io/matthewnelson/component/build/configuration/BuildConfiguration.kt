@@ -131,14 +131,40 @@ class BuildConfiguration {
     }
 
     override fun toString(): String {
-        return  "BuildConfiguration(" +
-                "applicationId=$applicationId," +
-                "versionName=$versionName," +
-                "versionCode=$versionCode," +
-                "isDebug=$isDebug," +
-                "variant=$variant," +
-                "flavor=$flavor" +
-                ")"
+        return StringBuilder().apply {
+            append("Build Configuration [")
+
+            appendLine()
+            append("    applicationId: ")
+            append(applicationId)
+
+            appendLine()
+            append("    versionName: ")
+            append(versionName)
+
+            appendLine()
+            append("    versionCode: ")
+            append(versionCode)
+
+            appendLine()
+            append("    isDebug: ")
+            append(isDebug)
+
+            if (variant.isNotBlank()) {
+                appendLine()
+                append("    variant: ")
+                append(variant)
+            }
+
+            if (flavor.isNotBlank()) {
+                appendLine()
+                append("    flavor: ")
+                append(flavor)
+            }
+
+            appendLine()
+            append(']')
+        }.toString()
     }
 
     fun copy(
