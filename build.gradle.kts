@@ -43,7 +43,10 @@ allprojects {
 }
 
 plugins {
+    val vBinaryCompat = io.matthewnelson.kotlin.components.dependencies.versions.gradle.binaryCompat
+
     id(pluginId.kmp.publish)
+    id(pluginId.kotlin.binaryCompat) version(vBinaryCompat)
 }
 
 kmpPublish {
