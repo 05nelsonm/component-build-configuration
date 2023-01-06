@@ -1,0 +1,24 @@
+public final class io/matthewnelson/component/build/configuration/BuildConfiguration {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;IZ)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;IZLjava/lang/String;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;IZLjava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;IZLjava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()I
+	public final fun component4 ()Z
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;IZLjava/lang/String;Ljava/lang/String;)Lio/matthewnelson/component/build/configuration/BuildConfiguration;
+	public static synthetic fun copy$default (Lio/matthewnelson/component/build/configuration/BuildConfiguration;Ljava/lang/String;Ljava/lang/String;IZLjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/matthewnelson/component/build/configuration/BuildConfiguration;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getApplicationId ()Ljava/lang/String;
+	public final fun getFlavor ()Ljava/lang/String;
+	public final fun getVariant ()Ljava/lang/String;
+	public final fun getVersionCode ()I
+	public final fun getVersionName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun isDebug ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
