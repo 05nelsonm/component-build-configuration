@@ -28,7 +28,7 @@ A Kotlin Multiplatform library for utilizing `BuildConfiguration` details from c
 ```kotlin
 // build.gradle.kts
 dependencies {
-    implementation("io.matthewnelson.kotlin-components:build-configuration:3.0.4")
+    implementation("io.matthewnelson.kotlin-components:build-configuration:3.0.5")
 }
 ```
 
@@ -37,7 +37,7 @@ dependencies {
 ```groovy
 // build.gradle
 dependencies {
-    implementation "io.matthewnelson.kotlin-components:build-configuration:3.0.4"
+    implementation "io.matthewnelson.kotlin-components:build-configuration:3.0.5"
 }
 ```
 
@@ -47,15 +47,16 @@ dependencies {
 
 <!-- TAG_VERSION -->
 
-| build-configuration | kotlin  |
-|:-------------------:|:-------:|
-|        3.0.4        | 1.7.20  |
-|        3.0.3        | 1.6.21  |
-|        3.0.2        | 1.6.21  |
-|        3.0.1        | 1.6.21  |
-|        3.0.0        | 1.6.10  |
-|        2.0.0        | 1.6.10  |
-|          1          | 1.5.31  |
+| build-configuration | kotlin |
+|:-------------------:|:------:|
+|        3.0.5        | 1.8.0  |
+|        3.0.4        | 1.7.20 |
+|        3.0.3        | 1.6.21 |
+|        3.0.2        | 1.6.21 |
+|        3.0.1        | 1.6.21 |
+|        3.0.0        | 1.6.10 |
+|        2.0.0        | 1.6.10 |
+|          1          | 1.5.31 |
 
 ### Usage (Android example using Hilt dependency injection)
 
@@ -122,11 +123,11 @@ $ git pull --recurse-submodules
 ```
 
 <!-- TAG_VERSION -->
-[badge-latest-release]: https://img.shields.io/badge/latest--release-3.0.4-blue.svg?style=flat
+[badge-latest-release]: https://img.shields.io/badge/latest--release-3.0.5-blue.svg?style=flat
 [badge-license]: https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat
 
 <!-- TAG_DEPENDENCIES -->
-[badge-kotlin]: https://img.shields.io/badge/kotlin-1.7.20-blue.svg?logo=kotlin
+[badge-kotlin]: https://img.shields.io/badge/kotlin-1.8.0-blue.svg?logo=kotlin
 
 <!-- TAG_PLATFORMS -->
 [badge-platform-android]: http://img.shields.io/badge/-android-6EDB8D.svg?style=flat
