@@ -25,8 +25,8 @@ buildscript {
     }
 
     dependencies {
-        classpath(io.matthewnelson.kotlin.components.dependencies.plugins.kotlin.gradle)
-        classpath(io.matthewnelson.kotlin.components.dependencies.plugins.mavenPublish)
+        classpath(pluginDeps.kotlin.gradle)
+        classpath(pluginDeps.mavenPublish)
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle.kts files
@@ -50,10 +50,8 @@ configureYarn { rootYarn, _ ->
 }
 
 plugins {
-    val vBinaryCompat = io.matthewnelson.kotlin.components.dependencies.versions.gradle.binaryCompat
-
     id(pluginId.kmp.publish)
-    id(pluginId.kotlin.binaryCompat) version(vBinaryCompat)
+    id(pluginId.kotlin.binaryCompat) version(versions.gradle.binaryCompat)
 }
 
 kmpPublish {
